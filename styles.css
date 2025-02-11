@@ -1,0 +1,792 @@
+body {
+    margin: 0;
+    font-family: "Playfair Display", sans-serif;
+    background-color: #ffffff;
+    color:#000;
+}
+
+a{
+    text-decoration: none;
+    color:#fff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+
+.header {
+    padding: 23px 0;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.header__nav {
+    margin-left: 80px;
+}
+
+.header__list {
+    display: flex;
+    gap: 70px;
+}
+
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    border-bottom: 1px solid #b7b7b7;;
+    /* Линия снизу */
+}
+
+.input {
+   font-family: "Plantagenet Cherokee", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #b7b7b7;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-right: 30px;
+}
+
+.input::placeholder {
+    color:#b7b7b7;
+}
+
+.search__input {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+.icon-search {
+    width: 22px;
+    height: 22px;
+    fill: #b7b7b7;
+}
+
+/*============== WELCOME */
+
+.welcome {
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin-top: -100px;
+    padding: 290px 0;
+    background-image: url(./images/Rectangle\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.welcome__title {
+    font-weight: 400;
+    font-size: 35px;
+    color: #fff;
+    width: 470px;
+    margin-bottom: 40px;
+}
+
+.welcome__subtitle {
+    font-weight: 400;
+    font-family: "Hind Vadodara", sans-serif;
+    font-size: 18px;
+    line-height: 1.16667;
+    color: #fff;
+    width: 388px;
+    margin-bottom: 33px;
+}
+
+.welcome__text{
+    width: 470px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    color: #494949;
+    border: 1px solid #9b8c7c;
+    width: 206px;
+    height: 52px;
+    background-color: #f0f0f0;
+    border: none;
+}
+
+/*============== WELCOME */
+
+
+/*---------------- WIFE */
+.wife {
+    background-color: #fff;
+}
+
+.card-wife{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding-top: 66px;
+    padding-bottom: 90px;
+}
+
+.wife__title {
+    margin-bottom: 14px;
+    margin-top: 80px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 0.875;
+    text-align: center;
+}
+
+.wife__text {
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3125;
+    text-align: center;
+}
+
+.wife-list__card {
+    width: 270px;
+}
+
+.wife-list__image {
+    width: 100%;
+    height: 358px;
+    object-fit: cover;
+}
+
+.wife-list__title {
+    padding-top: 10px;
+    padding-bottom: 7px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.3125;
+}
+
+.wife-list__desc {
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3125;
+    color: #767575;
+}
+
+
+/*---=============== DESINGER */
+
+.desinger__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 0.875;
+    text-transform: capitalize;
+    text-align: center;
+    padding-bottom: 14px;
+}
+
+.desinger__subtitle {
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3125;
+    text-align: center;
+}
+
+.desinger__title_text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 0.875;
+    text-transform: capitalize;
+    text-align: center;
+    padding-bottom: 14px;
+}
+
+.desinger__desc {
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3125;
+    text-align: center;
+    padding-bottom: 90px;
+}
+
+.disinger__content {
+    display: flex;
+    gap: 40px;
+}
+
+.sidebar {
+    width: 418px;
+    padding-right: 20px;
+}
+
+.disinger__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.05;
+    color: #9b8c7c;
+    font-weight: normal;
+    margin-bottom: 10px;
+    position: relative;
+    padding-bottom: 5px;
+    margin-bottom: 38px;
+}
+
+.disinger__title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.disinger__list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    padding-bottom: 90px;
+}
+
+.disinger__item {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.05;
+}
+
+.disinger__item:hover {
+    text-decoration: underline;
+}
+
+.other-designers {
+    font-family: "Hind Vadodara", sans-serif;
+    font-size: 16px;
+    line-height: 1.3125;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.arrow-desinger{
+    margin-left: 17px;
+    width: 25px;
+    height: 25px;
+}
+
+.arrow {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 90px;
+}
+
+  .gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+  }
+
+  .top-image {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+  
+  }
+
+  .bottom-images {
+    width: 100%;
+      display: flex;
+    object-fit: cover;
+      gap: 20px;
+  }
+
+  .bottom-images img {
+      width: 50%;
+      height: 320px;
+     object-fit: cover;
+  
+  }
+
+/* ===============COLLECTION */
+
+.collection {
+    padding-bottom: 90px;
+}
+
+.container {}
+
+.collection__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 0.875;
+    text-align: center;
+    padding-bottom: 14px;
+}
+
+.collection_desc {
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3125;
+    text-align: center;
+    padding-bottom: 57px;
+}
+
+.collection__block {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 69px;
+}
+
+.collection__wrapp {
+    position: relative;
+}
+
+.collection__photo {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.collection__photo.left {
+    position: relative;
+    bottom: -70px;
+}
+
+.collection__photo.centr {
+    position: relative;
+    z-index: 2;
+}
+
+.collection__photo.right {
+    position: relative;
+    top: -70px;
+}
+
+.button_btn{
+    margin: 0 auto;
+    font-family: "Playfair Display", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.23529;
+    color: #fff;
+    width: 150px;
+    height: 44px;
+    background-color: #9b8c7c;
+    border: none;
+}
+
+/* ===============ACCESSORIES */
+
+
+.accessories {
+    padding-bottom: 90px; 
+}
+
+.accessories__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 35px;
+}
+
+.accessories__info {
+    width: 346px;
+}
+
+.accessories__title {
+    font-weight: 400;
+    font-size: 35px;
+    padding-bottom: 66px;
+}
+
+.accessories__text {
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 42px;
+}
+
+.accessories_btn {
+    margin: 0 ;
+    font-family: "Playfair Display", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.23529;
+    color: #fff;
+    width: 150px;
+    height: 44px;
+    background-color: #9b8c7c;
+    border: none;
+}
+
+.accessories-list__image {
+    width:100%;
+    object-fit: cover;
+}
+
+.accessories-list__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.31;
+}
+
+.accessories-list__desc {
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.31;
+    color: #767575;
+}
+
+
+/*========================= DRESS */
+
+.dress{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-bottom: 90px;
+}
+
+.dress-form__text {
+    padding-bottom: 86px;
+}
+
+.dress-form_title {
+    width: 555px;
+    font-weight: 400;
+    font-size: 34px;
+}
+
+.dress-form_color {
+    color: #9b8c7c;
+}
+
+
+.dress-form__form {
+    width: 431px;
+    padding: 10px;
+}
+
+/* Стили формы */
+.dress__shoping {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 86px;
+}
+
+/* Стили инпутов */
+.dress-input {
+    width: 100%;
+    padding: 10px 0;
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #b7b7b7;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    outline: none;
+    background: transparent;
+}
+
+
+.dress__date-time {
+    display: flex;
+    gap: 80px;
+    margin-top: 51px;
+}
+
+.picker{
+    border: 1px solid #b7b7b7;
+    width: 160px;
+    padding-left: 14px;
+}
+
+/* Группа для календаря и времени */
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    /* Две колонки */
+}
+
+/* Иконки внутри инпутов справа */
+.icon {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.icon svg {
+    fill: #b7b7b7;
+    width: 20px;
+    height: 20px;
+}
+
+.dress__btn{
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    width: 264px;
+    height: 44px;
+    color: #fff;
+    background: #9b8c7c;
+    border: none;
+}
+
+/*==================== FOLLOW */
+
+.follow {
+    padding-bottom: 90px;
+}
+
+.container {}
+
+.follow__title {
+    font-size: 24px;
+    line-height: 0.875;
+    text-transform: capitalize;
+    text-align: center;
+    padding-bottom: 17px;
+
+}
+
+.follow__link {
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.16667;
+    text-transform: capitalize;
+    color: #5c5c5c;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 42px;
+}
+
+.follow__dress-card {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.dress_card-img {}
+
+
+/*=============== FOOTER */
+
+.footer {
+    padding-top: 88px;
+    padding-bottom: 117px;
+    background: #f0f0f0;
+}
+
+.container {}
+
+.container__footer{
+    display: flex;
+ align-items: center;
+gap: 110px;
+}
+
+.info__footer {
+ 
+}
+
+.logo__black{
+    padding-bottom: 28px;
+}
+
+.footer__text {
+    font-family: "Hind Vadodara", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.06667;
+        padding-bottom: 17px;
+}
+
+.footer__desc {
+    font-family: "Hind Vadodara", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.4;
+        color: #000;
+         text-decoration: none;
+    border-bottom: 1px solid #848484;
+            /* Добавляем полоску */
+            padding-bottom: 2px;
+}
+
+.link__footer{
+    display: flex;
+    flex-direction: column;
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.05;
+    color: #000;
+    padding-bottom: 20px;
+}
+
+.link__footer__email{
+    font-family: "Hind Vadodara", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.4;
+        color: #000;
+}
+
+.icon__footer{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding-top: 20px;
+}
+
+.soc__list-footer{
+
+}
+
+.soc-link{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 33px;
+    height: 33px;
+    background-color: #000;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.soc-link:hover {
+    transform: scale(1.1);
+    /* Увеличение при наведении */
+}
+
+.soc__list {
+width: 17px;
+    /* Размер иконки */
+    height: 17px;
+    fill: #fff;
+    /* Белый цвет иконки */
+}
+
+.soc__list:hover{
+    fill: #b6b6b6;
+}
+
+
+.footer__desc-footer {
+   display: flex;
+   flex-direction: column;
+}
+
+.footer__text-footer {
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+        font-size: 20px;
+padding-bottom: 42px;
+       
+}
+
+
+.footer__desc-footer {
+    max-width: 500px;
+    width: 100%;
+}
+
+/* .footer__text-footer {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+} */
+
+.footer__input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+width: 100%;
+    /* Растягиваем на всю ширину */
+    max-width: 405px;
+    /* Длина полоски */
+    border-bottom: 1px solid #aaa;
+    /* Полоска снизу */
+    padding-bottom: 5px;
+}
+
+.footer__input {
+width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 8px 0;
+    color: #666;
+    background: transparent;
+}
+
+.footer__input::placeholder {
+    color: #aaa;
+}
+
+.footer__icon {
+    width: 20px;
+    height: 20px;
+    fill: #aaa;
+    cursor: pointer;
+}
