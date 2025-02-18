@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     font-family: "Playfair Display", sans-serif;
@@ -41,6 +42,7 @@ img{
     padding: 0 15px;
 }
 
+
 .header {
     padding: 23px 0;
 }
@@ -52,12 +54,12 @@ img{
 }
 
 .header__nav {
-    margin-left: 80px;
+    margin-left: 150px;
 }
 
 .header__list {
     display: flex;
-    gap: 70px;
+    gap: 50px;
 }
 
 
@@ -78,7 +80,6 @@ img{
     background: transparent;
     border: none;
     outline: none;
-    padding-right: 30px;
 }
 
 .input::placeholder {
@@ -97,6 +98,17 @@ img{
     height: 22px;
     fill: #b7b7b7;
 }
+
+.icon-search {
+    transition: transform 0.3s ease;
+    /* Плавное увеличение */
+}
+
+.icon-search:hover {
+    transform: scale(1.2);
+    /* Увеличиваем иконку на 20% */
+}
+
 
 /*============== WELCOME */
 
@@ -133,18 +145,57 @@ img{
     width: 470px;
 }
 
-.btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 19px;
-    color: #494949;
-    border: 1px solid #9b8c7c;
+
+ .btn {
+    display: inline-block;
     width: 206px;
     height: 52px;
+    border: 1px solid #9b8c7c;
     background-color: #f0f0f0;
-    border: none;
+    color: #9b8c7c;
+    font-size: 16px;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    line-height: 52px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+    transition: all 0.3s ease-in-out;
 }
+
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(155, 140, 124, 0.2);
+   
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+    pointer-events: none;
+}
+
+
+.btn:hover {
+    background-color: #9b8c7c;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+
+.btn:hover::before {
+    width: 350%;
+    height: 350%;
+} */
+
+
+
+
 
 /*============== WELCOME */
 
@@ -209,6 +260,7 @@ img{
 
 /*---=============== DESINGER */
 
+
 .desinger__title {
     font-weight: 400;
     font-size: 24px;
@@ -216,6 +268,7 @@ img{
     text-transform: capitalize;
     text-align: center;
     padding-bottom: 14px;
+    
 }
 
 .desinger__subtitle {
@@ -357,7 +410,6 @@ img{
     padding-bottom: 90px;
 }
 
-.container {}
 
 .collection__title {
     font-weight: 400;
@@ -423,7 +475,21 @@ img{
     height: 44px;
     background-color: #9b8c7c;
     border: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
+
+
+
+/* Эффект тени и изменения цвета */
+.button_btn:hover {
+    background-color: #847361;
+    /* Темный оттенок */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Тень для эффекта объема */
+}
+
+
+
 
 /* ===============ACCESSORIES */
 
@@ -470,7 +536,17 @@ img{
     height: 44px;
     background-color: #9b8c7c;
     border: none;
+    transition: background-color 0.3s,
+        box-shadow 0.3s;
 }
+
+                .accessories_btn:hover {
+            background-color: #847361;
+            /* Темный оттенок */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            /* Тень для эффекта объема */
+        }
+
 
 .accessories-list__image {
     width:100%;
@@ -588,7 +664,15 @@ img{
     color: #fff;
     background: #9b8c7c;
     border: none;
+    transition: background-color 0.3s,
+ box-shadow 0.3s;
 }
+
+.dress__btn:hover {
+     background-color: #847361;
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+ }
+
 
 /*==================== FOLLOW */
 
@@ -596,7 +680,6 @@ img{
     padding-bottom: 90px;
 }
 
-.container {}
 
 .follow__title {
     font-size: 24px;
@@ -625,7 +708,7 @@ align-items: center;
 justify-content: space-between;
 }
 
-.dress_card-img {}
+
 
 
 /*=============== FOOTER */
@@ -636,7 +719,7 @@ justify-content: space-between;
     background: #f0f0f0;
 }
 
-.container {}
+
 
 .container__footer{
     display: flex;
@@ -644,9 +727,7 @@ justify-content: space-between;
 gap: 110px;
 }
 
-.info__footer {
- 
-}
+
 
 .logo__black{
     padding-bottom: 28px;
@@ -698,9 +779,7 @@ gap: 110px;
     padding-top: 20px;
 }
 
-.soc__list-footer{
 
-}
 
 .soc-link{ 
     display: flex;
@@ -790,3 +869,64 @@ width: 100%;
     fill: #aaa;
     cursor: pointer;
 }
+
+
+@media (max-width : 1050px) {
+    .header .container{
+     
+    }
+
+   .header__nav{
+    margin-left: 0;
+}
+
+    .input-container{
+        display: none;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #f6762c;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    transition: opacity 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-to-top.active {
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+.scroll-to-top:hover {
+    background-color: #e5641f;
+    transform: scale(1.1);
+}
+
+.scroll-to-top:active {
+    transform: scale(0.95);
+}
+
+

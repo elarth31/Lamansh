@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/flatpickr/dist/flatpickr.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -10,8 +14,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="search.css" />
     <title>LAMANSH</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header class="header">
@@ -30,11 +34,12 @@
         <label class="input-container">
           <input
             type="text"
+            id="search-input"
             class="input"
             placeholder="Find your dream dress"
           />
           <span class="search__input">
-            <svg class="icon-search">
+            <svg class="icon-search" id="search-icon">
               <use href="./images/svg/symbol-defs.svg#icon-Search"></use>
             </svg>
           </span>
@@ -46,7 +51,7 @@
       <section class="welcome">
         <div class="container">
           <div class="welcome__text">
-            <h1 class="welcome__title">
+            <h1 data-aos="fade-right" class="welcome__title">
               Find the dress of your dreams and make your wedding a fairytale
               come true
             </h1>
@@ -163,6 +168,7 @@
           <div class="collection__block">
             <div class="collection__wrapp">
               <img
+                data-aos="zoom-in-right"
                 class="collection__photo left"
                 src="./images/Rectangle-1.jpg"
                 alt=""
@@ -170,6 +176,7 @@
             </div>
             <div class="collection__wrapp">
               <img
+                data-aos="zoom-out"
                 class="collection__photo centr"
                 src="./images/Rectangle-2.jpg"
                 alt=""
@@ -177,6 +184,7 @@
             </div>
             <div class="collection__wrapp">
               <img
+                data-aos="zoom-in-left"
                 class="collection__photo right"
                 src="./images/Rectangle-3.jpg"
                 alt=""
@@ -373,11 +381,13 @@
                 <use href="./images/svg/symbol-defs.svg#icon-instagram"></use>
               </svg>
             </a>
+
             <a class="soc-link" href="">
               <svg class="soc__list">
                 <use href="./images/svg/symbol-defs.svg#icon-facebook"></use>
               </svg>
             </a>
+
             <a class="soc-link" href="">
               <svg class="soc__list">
                 <use href="./images/svg/symbol-defs.svg#icon-twitter"></use>
@@ -403,6 +413,18 @@
         </div>
       </div>
     </footer>
+
+    <script src="node_modules/inputmask/dist/inputmask.min.js"></script>
+    <script src="node_modules/flatpickr/dist/flatpickr.min.js"></script>
     <script type="module" src="./script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // продолжительность анимации
+        once: true, // анимация будет воспроизводиться только один раз
+        mirror: false, // анимация не будет повторяться при прокрутке в обе стороны
+      });
+    </script>
+    <button class="scroll-to-top" id="scrollToTopBtn">&#8679;</button>
   </body>
 </html>
