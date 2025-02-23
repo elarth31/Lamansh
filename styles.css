@@ -653,6 +653,7 @@ img{
     fill: #b7b7b7;
     width: 20px;
     height: 20px;
+    padding: 5px;
 }
 
 .dress__btn{
@@ -905,15 +906,15 @@ width: 100%;
     right: 20px;
     width: 50px;
     height: 50px;
-    background-color: #f6762c;
+    background: #9b8c7c;
     color: white;
     border: none;
     border-radius: 50%;
     font-size: 24px;
     cursor: pointer;
     display: none;
-    transition: opacity 0.3s;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+transition: background-color 0.3s,
+        box-shadow 0.3s;
 }
 
 .scroll-to-top.active {
@@ -921,12 +922,11 @@ width: 100%;
 }
 
 .scroll-to-top:hover {
-    background-color: #e5641f;
+background-color: #847361;
     transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .scroll-to-top:active {
     transform: scale(0.95);
 }
-
-
